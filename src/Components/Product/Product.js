@@ -17,7 +17,7 @@ const Product = ({product,handleAddToCart}) => {
                <p> ${price}</p>
             </div>
             <button onClick={()=>handleAddToCart(product)} className='btn-cart'>
-               <p >ADD TO CART</p>
+               <p  >ADD TO CART</p>
                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
             

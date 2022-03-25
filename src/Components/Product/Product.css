@@ -42,5 +42,9 @@
     justify-content: center;
 }
 .btn-cart:hover{
-     background:rgb(209, 209, 255);
+     background:rgb(124, 116, 201);
+     color: white;
+}
+.btn-cart p{
+    margin-right: 5px;
 }

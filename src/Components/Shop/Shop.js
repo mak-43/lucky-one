@@ -13,7 +13,7 @@ const Shop = () => {
     },[])
 
     const handleAddToCart=(product)=>{
-        console.log(product.id)
+        
         const newCart=[...cart,product]
         setCart(newCart)
     }
@@ -21,7 +21,7 @@ const Shop = () => {
         <div className='shop-container'>
             <div>
                 <h1>Confused Buyer</h1>
-                <h3>Choose 4 Clothes</h3>
+                <h3>Choose 4 Phones</h3>
             </div>
             <div className='products-container'>
                 <div className='product-container'>
@@ -35,10 +35,12 @@ const Shop = () => {
                   }
                  
                 </div>
-                <div className='cart'>
-                    <h2>Selected Items</h2>
-                    <p>selected: {cart.length}</p>
-                    <Cart></Cart>
+                <div className='cart-container'>
+                    
+                    <Cart
+                    
+                        cart={cart}
+                    ></Cart>
                 </div>
             </div>
         </div>
