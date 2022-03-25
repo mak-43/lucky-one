@@ -1,3 +1,4 @@
+import { faChainSlash } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
@@ -17,6 +18,11 @@ const Shop = () => {
         const newCart=[...cart,product]
         setCart(newCart)
     }
+    // const removeItem=(product)=>{
+    //     const newCart=cart.indexOf(product)
+    //     console.log(newCart)
+
+    // }
     return (
         <div className='shop-container'>
             <div>
@@ -38,7 +44,7 @@ const Shop = () => {
                 <div className='cart-container'>
                     
                     <Cart
-                    
+                       
                         cart={cart}
                     ></Cart>
                 </div>

@@ -1,13 +1,14 @@
 .product img{
-    height: 286px;
-    width: 286px;
-    border-radius: 8px;
-    margin:7px ;
+    
+    border-radius: 10px;
+    padding-top: 5px;
+    margin: 5px;
+    
 }
 .product{
     background-color: white;
     width: 300px;
-    height: 510px; 
+    height: 400px; 
     border: 1px solid #95a0a7;
     border-radius: 8px;
     position: relative;
@@ -23,6 +24,7 @@
 }
 .product-info{
     margin:0 14px;
+    padding-bottom: 10px;
 
 }
 .product-info p{
