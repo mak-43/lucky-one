@@ -1,0 +1,23 @@
+.shop-container{
+    background-color: rgb(224, 223, 225);
+  
+}
+.shop-container h1{
+    font-size:40px;
+    color:rgb(148, 48, 165);
+    font-weight: lighter;
+}
+.shop-container h3{
+    font-size: 30px;
+    font-weight:400;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:45px;
+    
+}
