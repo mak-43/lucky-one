@@ -63,7 +63,7 @@ const Shop = () => {
 
         }
         else{
-            alert("You already add this watch")
+            alert("You already add this item")
             temp=[...cart]
         }
         if(temp.length<=4){

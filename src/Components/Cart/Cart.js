@@ -4,10 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Cart.css'
 const Cart = ({cart,removeItem,remove,random}) => {
 
-        // if(cart.length>4){
-        //     console.log('more than 4')
-
-        // }
+        
         
         return (
             <div className='cart'>
