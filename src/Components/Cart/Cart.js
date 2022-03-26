@@ -4,26 +4,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Cart.css'
 const Cart = ({cart,removeItem}) => {
     
-  let r
-  let arr=[]
-    
-    const choose1ForMe=()=>{
-       
-        cart.map(i=>{
-            const t=i.id
-            arr.push(t)
-        })
-        const l=[...arr]
-        r=Math.random(l)
 
-       console.log(arr)
+   const arr =[cart]
+   console.log(arr)
+    const test=(min,max)=>{
+       
+        let s1=max-min+1 
+        let s2=Math.random()*s1 
+        let r=Math.floor(s2)+min
+        return r
     }
+  
+    const choose1ForMe=()=>{
+        let index=test(0,cart.length-1)
+        const  tem=cart[index]
+        alert("Buy "+tem.name+' '+'Price '+tem.price)
+        return tem  
+    }
+   
+    
     const chooseAgain=()=>{
 
     }
-
-
-
+    
+    
+    
 
     //const length=cart.length
    // if(length<5){
@@ -32,7 +37,7 @@ const Cart = ({cart,removeItem}) => {
                 <h2>Selected Phone</h2>
                 <p>selected: {cart.length}</p>
                 
-              
+                
                
                 {
                     
@@ -45,14 +50,18 @@ const Cart = ({cart,removeItem}) => {
                      </div>
                     )
                 }
-                <button className='chooseForMe' onClick={()=>choose1ForMe()} >CHOOSE 1 FOR ME</button>
-                <button className='chooseAgain' onClick={()=>chooseAgain()}>CHOOSE AGAIN</button>
+                
 
+                <button className='chooseForMe' onClick={choose1ForMe} >CHOOSE 1 FOR ME</button>
+                <button className='chooseAgain' onClick={()=>chooseAgain()}>CHOOSE AGAIN</button>
+                
+                
             </div>
         );
    // }
 
     
 };
+
 
 export default Cart;

@@ -117,19 +117,6 @@
     "img": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10c.jpg",
     "shipping": 39,
     "quantity": 0
-  },
-  {
-    "id": "10",
-    "category": "Bag",
-    "name": "Xiaomi Redmi Note 11 Pro 5g",
-    "seller": "Addidas",
-    "price": 13000,
-    "stock": 7,
-    "ratings": 5,
-    "ratingsCount": 365,
-    "img": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11-pro-5g-global.jpg",
-    "shipping": 23,
-    "quantity": 0
   }
   
 ]
