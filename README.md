@@ -1,11 +1,8 @@
-# Assignment-8
-## Live-site Link
-[]()
 
 
 # Assignment-8
 
-Netlify link: [Create React App].
+
 
 ## Netlify live site link
 
