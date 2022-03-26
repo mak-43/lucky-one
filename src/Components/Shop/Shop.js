@@ -12,6 +12,15 @@ const Shop = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
+   
+
+    const remove=()=>{
+        setCart([])
+    }
+  
+    const random=()=>{
+      
+    }
 
     const handleAddToCart=(product)=>{
         
@@ -44,7 +53,9 @@ const Shop = () => {
                 <div className='cart-container'>
                     
                     <Cart
-                       
+                        
+                        random={random}
+                       remove={remove}
                         cart={cart}
                     ></Cart>
                 </div>
