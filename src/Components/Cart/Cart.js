@@ -7,18 +7,17 @@ const Cart = ({cart,removeItem}) => {
 
    const arr =[cart]
    console.log(arr)
+
     const test=(min,max)=>{
-       
         let s1=max-min+1 
         let s2=Math.random()*s1 
         let r=Math.floor(s2)+min
         return r
     }
-  
     const choose1ForMe=()=>{
         let index=test(0,cart.length-1)
         const  tem=cart[index]
-        alert("Buy "+tem.name+' '+'Price '+tem.price)
+        alert("Buy "+tem.name+' , '+'Price : '+tem.price)
         return tem  
     }
    
@@ -34,7 +33,7 @@ const Cart = ({cart,removeItem}) => {
    // if(length<5){
         return (
             <div className='cart'>
-                <h2>Selected Phone</h2>
+                <h4>Selected Gadgets</h4>
                 <p>selected: {cart.length}</p>
                 
                 

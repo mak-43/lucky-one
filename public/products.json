@@ -17,13 +17,13 @@
   {
     "id": "2",
     "category": "Men's Sneaker",
-    "name": "Apple iPhone 13",
+    "name": "Realme Pro",
     "seller": "Addidas",
-    "price": 70000,
+    "price": 30000,
     "stock": 12,
     "ratings": 4,
     "ratingsCount": 41,
-    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/realme-9-pro.jpg",
     "shipping": 38,
     "quantity": 0
   },
@@ -43,13 +43,13 @@
   {
     "id": "4",
     "category": "Men's Sneaker",
-    "name": "Apple iPhone 13 Pro",
+    "name": "Oppo A3s",
     "seller": "Addidas",
     "price": 44000,
     "stock": 20,
     "ratings": 3,
     "ratingsCount": 4727,
-    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a3s.jpg",
     "shipping": 2,
     "quantity": 0
   },
@@ -69,13 +69,13 @@
   {
     "id": "6",
     "category": "Men's Sneaker",
-    "name": "Apple iphone se",
+    "name": "HTC Wildfire E2",
     "seller": "Addidas",
     "price": 29000,
     "stock": 6,
     "ratings": 3,
     "ratingsCount": 805,
-    "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-se-2020.jpg",
+    "img": "https://fdn2.gsmarena.com/vv/bigpic/htc-wildfire-e2-plus.jpg",
     "shipping": 6,
     "quantity": 0
   },

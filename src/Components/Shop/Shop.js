@@ -26,8 +26,8 @@ const Shop = () => {
     return (
         <div className='shop-container'>
             <div>
-                <h1>Confused Buyer</h1>
-                <h3>Choose 4 Phones</h3>
+                <h1>Best Gadget Generator</h1>
+                <h3>Choose 4 Gadgets</h3>
             </div>
             <div className='products-container'>
                 <div className='product-container'>
