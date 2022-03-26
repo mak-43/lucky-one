@@ -1,13 +1,15 @@
-
+# Assignment-8
+## Live-site Link
+[]()
 
 
 # Assignment-8
 
-  [Netlify link:](https://assignment-8mak.netlify.app/).
+Netlify link: [Create React App].
 
-## Available Scripts
+## Netlify live site link
 
-In the project directory, you can run:
+(https://assignment-8mak.netlify.app/)
 
 ### `npm start`
 
