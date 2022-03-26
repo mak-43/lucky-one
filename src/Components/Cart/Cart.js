@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { faShoppingCart,faDeleteLeft, faChainSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Cart.css'
-const Cart = ({cart,removeItem,remove}) => {
+const Cart = ({cart,removeItem,remove,random}) => {
 
 
    
-    // let arr=[]
+     let arr=[]
     // if(cart){
       
     //     cart.map(p=>{
@@ -26,19 +26,19 @@ const Cart = ({cart,removeItem,remove}) => {
             
     //     })
     // }
-    const test=(min,max)=>{
-        let s1=max-min+1 
-        let s2=Math.random()*s1 
-        let r=Math.floor(s2)+min
-        return r
-    }
-    const random=()=>{
-        let index=test(0,cart.length-1)
-        const  tem=cart[index]
+    // const test=(min,max)=>{
+    //     let s1=max-min+1 
+    //     let s2=Math.random()*s1 
+    //     let r=Math.floor(s2)+min
+    //     return r
+    // }
+    // const random=()=>{
+    //     let index=test(0,cart.length-1)
+    //     const  tem=cart[index]
         
-        alert(tem.name+" , "+"Price : "+tem.price)
-    }
-    
+    //     alert(tem.name+" , "+"Price : "+tem.price)
+    // }
+ 
         return (
             <div className='cart'>
                 <h4>Selected Gadgets</h4>
@@ -52,7 +52,7 @@ const Cart = ({cart,removeItem,remove}) => {
                      <div className='cart-info' key={product.id}>
                              <img src={product.img} alt="" />
                              <p>{product.name}</p>
-                             <FontAwesomeIcon icon={faDeleteLeft} className="del" onClick={removeItem}></FontAwesomeIcon>
+                             <FontAwesomeIcon icon={faDeleteLeft} className="del" onClick={removeItem(product)}></FontAwesomeIcon>
                            
                      </div>
                     )
