@@ -4,41 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Cart.css'
 const Cart = ({cart,removeItem,remove,random}) => {
 
+        // if(cart.length>4){
+        //     console.log('more than 4')
 
-   
-     let arr=[]
-    // if(cart){
-      
-    //     cart.map(p=>{
-    //         if(arr.includes(p.id)  ){
-    //             alert('Item already exist ')
-    //             return 0
-                
-    //         }
-    //         else if(cart.length>4){
-    //             alert("You have choosen more than 4")
-    //             return 0
-    //         }
-    //         else{
-    //             arr.push(p.id)
-
-    //         }
-            
-    //     })
-    // }
-    // const test=(min,max)=>{
-    //     let s1=max-min+1 
-    //     let s2=Math.random()*s1 
-    //     let r=Math.floor(s2)+min
-    //     return r
-    // }
-    // const random=()=>{
-    //     let index=test(0,cart.length-1)
-    //     const  tem=cart[index]
+        // }
         
-    //     alert(tem.name+" , "+"Price : "+tem.price)
-    // }
- 
         return (
             <div className='cart'>
                 <h4>Selected Gadgets</h4>

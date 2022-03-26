@@ -14,14 +14,30 @@ const Shop = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[cart])
-
-
-
-   
     const remove=()=>{
+        
         setCart([])
       
     }
+  
+    useEffect(()=>{
+        const storedCart=getStoredCart();
+        const savedCart=[];
+        for(const id in storedCart){
+            const addedProduct=products.find(product=>product.id===id)
+            if(addedProduct){
+                const q=storedCart[id];
+                addedProduct.quantity=q
+                savedCart.push(addedProduct)
+           
+            }
+        }
+        setCart(savedCart)
+    },[])
+
+
+   
+    
     const test=(min,max)=>{
         let s1=max-min+1 
         let s2=Math.random()*s1 
@@ -39,6 +55,23 @@ const Shop = () => {
     const handleAddToCart=(product)=>{       
         const newCart=[...cart,product]
         setCart(newCart)
+        addToDb(product.id)
+        let temp=[]
+        const exists=cart.find(p=>p.id===product.id)
+        if(!exists){
+            temp=[...cart,product]
+
+        }
+        else{
+            alert("You already add this watch")
+            temp=[...cart]
+        }
+        if(temp.length<=4){
+            setCart(temp)
+        }
+        else{
+            alert('Oops!!! You already add 4 items')
+        }
       
     } 
     const removeItem=(e)=>{

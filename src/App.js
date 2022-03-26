@@ -11,8 +11,9 @@ function App() {
     <div className="App">
       <Shop></Shop>
       <HowReactWorks></HowReactWorks>
-      <HowUseStateWorks></HowUseStateWorks>
       <PropsVsState></PropsVsState>
+      <HowUseStateWorks></HowUseStateWorks>
+      
     </div>
   );
 }
