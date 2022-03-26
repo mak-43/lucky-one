@@ -1,10 +1,9 @@
-# Live-site link
-netlify link: 
 
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Assignment-8
+
+  [Netlify link:](https://assignment-8mak.netlify.app/).
 
 ## Available Scripts
 

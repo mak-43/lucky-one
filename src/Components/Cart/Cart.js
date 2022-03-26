@@ -5,8 +5,7 @@ import './Cart.css'
 const Cart = ({cart,removeItem}) => {
     
 
-   const arr =[cart]
-   console.log(arr)
+   
 
     const test=(min,max)=>{
         let s1=max-min+1 
@@ -24,11 +23,11 @@ const Cart = ({cart,removeItem}) => {
     
     const chooseAgain=()=>{
 
+        // cart.length=0
+        // console.log(cart.length)
+
     }
     
-    
-    
-
     //const length=cart.length
    // if(length<5){
         return (
@@ -52,7 +51,7 @@ const Cart = ({cart,removeItem}) => {
                 
 
                 <button className='chooseForMe' onClick={choose1ForMe} >CHOOSE 1 FOR ME</button>
-                <button className='chooseAgain' onClick={()=>chooseAgain()}>CHOOSE AGAIN</button>
+                <button className='chooseAgain' onClick={chooseAgain}>CHOOSE AGAIN</button>
                 
                 
             </div>
